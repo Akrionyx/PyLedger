@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>PyLedger — Learn Python, Line by Line</title>
+<meta name="description" content="Learn Python in your browser. 34 interactive lessons with a real Python interpreter — no install, no server.">
+<meta name="theme-color" content="#10151C">
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<meta property="og:title" content="PyLedger — Learn Python, Line by Line">
+<meta property="og:description" content="34 interactive lessons with a real Python interpreter, running entirely in your browser.">
+<meta property="og:image" content="https://akrionyx.github.io/pyledger/assets/og-image.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/theme/dracula.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app" id="app">
+
+  <!-- Mobile top bar -->
+  <div class="topbar">
+    <button class="menu-btn" id="menuBtn" aria-label="Open lesson list">☰</button>
+    <img class="topbar-icon" src="assets/icon-192.png" alt="" width="22" height="22">
+    <span class="topbar-title">PyLedger</span>
+    <span class="topbar-progress" id="topbarProgress">0 / 0</span>
+  </div>
+
+  <!-- Sidebar -->
+  <nav class="sidebar" id="sidebar">
+    <div class="brand">
+      <img class="brand-icon" src="assets/icon-192.png" alt="" width="30" height="30">
+      <span><span class="brand-mark">Py</span><span class="brand-name">Ledger</span></span>
+    </div>
+    <div class="brand-sub">Python, entry by entry.</div>
+
+    <div class="ledger-summary" id="ledgerSummary">
+      <div class="ledger-summary-row">
+        <span>Lessons complete</span>
+        <span id="progressCount">0 / 0</span>
+      </div>
+      <div class="ledger-bar"><div class="ledger-bar-fill" id="ledgerBarFill"></div></div>
+    </div>
+
+    <div class="module-list" id="moduleList"><!-- populated by app.js --></div>
+
+    <button class="reset-btn" id="resetProgressBtn">Reset all progress</button>
+  </nav>
+
+  <!-- Main -->
+  <main class="main" id="main">
+    <div class="lesson" id="lessonRoot">
+      <!-- populated by app.js -->
+    </div>
+  </main>
+
+</div>
+
+<div class="sidebar-scrim" id="sidebarScrim"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/python/python.min.js"></script>
+<script src="https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js"></script>
+<script src="course-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
