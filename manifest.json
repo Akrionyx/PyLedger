@@ -1,0 +1,30 @@
+{
+  "name": "PyLedger — Learn Python, Line by Line",
+  "short_name": "PyLedger",
+  "description": "Learn Python in your browser with a real Python interpreter. 34 interactive lessons, no install, no server.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#10151C",
+  "theme_color": "#10151C",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

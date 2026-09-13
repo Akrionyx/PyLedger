@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png" alt="PyLedger" width="200">
+  <img src="logo.png" alt="PyLedger" width="200">
 </p>
 
 <h1 align="center">PyLedger</h1>
@@ -8,7 +8,7 @@
 
 PyLedger is a self-paced Python course that runs a real CPython interpreter inside your browser tab. Read a lesson, type an answer in the editor, run it, and get checked against real test code. Nothing is simulated and nothing is sent anywhere — your progress stays on your own device.
 
-🔗 **[Open PyLedger](https://akrionyx.github.io/pyledger/)**
+🔗 **[Open PyLedger](https://akrionyx.github.io/PyLedger/)**
 
 ---
 
@@ -53,8 +53,8 @@ PyLedger is a self-paced Python course that runs a real CPython interpreter insi
 There's no build step and no dependencies to install. It does need to be served over HTTP rather than opened as a file, because the Python engine runs in a web worker.
 
 ```bash
-git clone https://github.com/Akrionyx/pyledger.git
-cd pyledger
+git clone https://github.com/Akrionyx/PyLedger.git
+cd PyLedger
 python3 -m http.server 8000
 ```
 
@@ -69,7 +69,6 @@ Any static host works. For GitHub Pages: push to `main`, then **Settings → Pag
 | File | What it does |
 |---|---|
 | `index.html` | Page shell and CDN script tags |
-| `assets/` | Logo, favicons and the link-preview image |
 | `style.css` | All styling. Design concept: an accountant's ledger meets a code terminal — ink-navy workspace, ledger-green paper for reading, a sunken terminal panel for code |
 | `course-data.js` | Every lesson, as plain data |
 | `app.js` | The engine: lesson rendering, progress, the Python worker, quizzes, review |
